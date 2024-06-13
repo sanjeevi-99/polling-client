@@ -19,7 +19,7 @@ const Provider = (props) => {
 
 
   const getPolls = (callback) => {
-    axios.get('/api/polls')
+    axios.get('https://polling-backend-ze8u.onrender.com/api/polls')
       .then(res => {
         setIsLoading(false);
         setPolls(res.data);
@@ -33,7 +33,7 @@ const Provider = (props) => {
 
   const addVote = (id, value, callback) => {
     // eslint-disable-next-line 
-    axios.patch(`/api/polls/cast/${id}`, { vote_id: value })
+    axios.patch(`https://polling-backend-ze8u.onrender.com/api/polls/cast/${id}`, { vote_id: value })
       .then(() => {
         getPolls(callback);
       })
@@ -44,7 +44,7 @@ const Provider = (props) => {
   }
 
   const createPoll = (payload, callback, err) => {
-    axios.post('/api/polls', payload)
+    axios.post('https://polling-backend-ze8u.onrender.com/api/polls', payload)
       .then(() => {
         getPolls(callback);
       })
@@ -54,7 +54,7 @@ const Provider = (props) => {
   }
 
   const editPoll = (id, payload, callback, err) => {
-    axios.patch(`/api/polls/${id}`, payload)
+    axios.patch(`https://polling-backend-ze8u.onrender.com/api/polls/${id}`, payload)
       .then(() => {
         getPolls(callback);
       })
@@ -66,7 +66,7 @@ const Provider = (props) => {
 
   const handleDeletePoll = (_id) => {
     // eslint-disable-next-line 
-    axios.delete(`/api/polls/${_id}`, { data: { poll_id: _id } })
+    axios.delete(`https://polling-backend-ze8u.onrender.com/api/polls/${_id}`, { data: { poll_id: _id } })
       .then(() => {
         getPolls();
         message.success('Poll has been deleted!', 3)

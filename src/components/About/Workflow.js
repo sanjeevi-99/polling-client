@@ -23,7 +23,7 @@ const Workflow = () => {
       <Timeline.Item>
         <h3>Planing API Structure</h3>
         <p>RESTfull API should be consisten and easy to integrate with our Front-end app thats why planning the API models is neccesary
-          for example our polls API looks like this /api/polls
+          for example our polls API looks like this https://polling-backend-ze8u.onrender.com/api/polls
               </p>
       </Timeline.Item>
       <Timeline.Item>
