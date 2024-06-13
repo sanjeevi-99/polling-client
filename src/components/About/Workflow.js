@@ -37,7 +37,7 @@ const Workflow = () => {
         <p>
           since we are done with backend we are going to add client side code, we will use create-react-app boilerplate to make our life easy.
           to connect our front-end with back-end we are going to use concurrently NPM package to start both our servers at the same time.
-          and to talk with our api endpoint we have to set a proxy to our client side package.json "proxy": "http://localhost:5000"
+          and to talk with our api endpoint we have to set a proxy to our client side package.json "proxy": "https://polling-backend-ze8u.onrender.com"
               </p>
       </Timeline.Item>
       <Timeline.Item>
