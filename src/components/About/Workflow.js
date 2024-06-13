@@ -56,22 +56,14 @@ const Workflow = () => {
           and i used ReactContextAPI to manage Global state of the app
               </p>
       </Timeline.Item>
-<<<<<<< HEAD
       {/* <Timeline.Item>
-=======
-      <Timeline.Item>
->>>>>>> bc7fd34 (client code)
         <h3>Deployment</h3>
         <p>
           i'm gonna use <a href="https://heroku.com">Heroku</a> to deploy our app online,
           heroku lets us depoly nodejs apps for free it uses something called Dynos to deploy nodejs apps.
           finnaly to depoly our app i'm gonna build our client side React code and make an optimized production build.
               </p>
-<<<<<<< HEAD
       </Timeline.Item> */}
-=======
-      </Timeline.Item>
->>>>>>> bc7fd34 (client code)
     </Timeline>
   )
 }
