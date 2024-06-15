@@ -11,13 +11,19 @@ const MenuItems = ({ mobile, handleClick, currentSelected, onLinkClick }) => {
       selectedKeys={[currentSelected]}
     >
       <Menu.Item key="polls">
-        <NavLink onClick={onLinkClick} exact to="/"><Icon type="pie-chart"></Icon> Polls</NavLink>
+        <NavLink onClick={onLinkClick} exact to="/polls"><Icon type="pie-chart"></Icon> Polls</NavLink>
       </Menu.Item>
       <Menu.Item key="create">
         <NavLink onClick={onLinkClick} exact to="/create"><Icon type="plus"></Icon> Create Poll</NavLink>
       </Menu.Item>
       <Menu.Item key="about">
         <NavLink onClick={onLinkClick} exact to="/about"><Icon type="info"></Icon> About</NavLink>
+      </Menu.Item>
+      <Menu.Item key="chat">
+        <NavLink onClick={onLinkClick} exact to="/joinus"><Icon type="message"></Icon> Chat</NavLink>
+      </Menu.Item>
+      <Menu.Item key="logout">
+        <NavLink onClick={onLinkClick} exact to="/"><Icon type="logout"></Icon> Logout</NavLink>
       </Menu.Item>
     </Menu>
   )
