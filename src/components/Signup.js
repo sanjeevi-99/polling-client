@@ -14,7 +14,7 @@ export default function Signup() {
         e.preventDefault();
         console.log(form);
 
-        const result = await axios.post("http://localhost:5000/auth/signup", form)
+        const result = await axios.post("https://polling-backend-ze8u.onrender.com/auth/signup", form)
         if (result.data.status_code === 200) {
             if (form.email !== '' && form.password !== '') {
                 history.push('/');

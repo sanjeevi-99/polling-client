@@ -7,7 +7,7 @@ import { message } from 'antd';
 export default function Login() {
     const [form, setForm] = useState({ email: "", password: "" });
     const history = useHistory();
-    // const socket = socketIO.connect("http://localhost:5000")
+    // const socket = socketIO.connect("https://polling-backend-ze8u.onrender.com")
 
     const handleOnChange = (key, value) => {
         setForm(prev => ({ ...prev, [key]: value }))
@@ -16,7 +16,7 @@ export default function Login() {
         e.preventDefault();
         console.log(form);
 
-        const result = await axios.post("http://localhost:5000/auth/login", form)
+        const result = await axios.post("https://polling-backend-ze8u.onrender.com/auth/login", form)
         console.log('result', result);
         if (result.data.status_code === 200) {
             const token = result.data.token;

@@ -9,7 +9,7 @@ const ChatPage = ({ props }) => {
     const [messages, setMessages] = useState([])
     const [typingStatus, setTypingStatus] = useState("")
     const lastMessageRef = useRef(null);
-    const socket = socketIO.connect("http://localhost:5000")
+    const socket = socketIO.connect("https://polling-backend-ze8u.onrender.com")
     const location = useLocation();
     const name = location.state.params;
     const id = localStorage.getItem('userid');

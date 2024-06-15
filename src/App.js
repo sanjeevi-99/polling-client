@@ -16,7 +16,7 @@ import 'antd/dist/antd.css';
 // import socketIO from "socket.io-client"
 import ChatPage from './components/ChatPage'
 
-// const socket = socketIO.connect("http://localhost:5000")
+// const socket = socketIO.connect("https://polling-backend-ze8u.onrender.com")
 
 class App extends Component {
   internetConnection = () => {
